@@ -1,18 +1,51 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 
-const Header = () => {
+const Header = ({ locale }: { locale: string }) => {
+  const pathname = usePathname();
+  const path = pathname.split("/")[2];
   return (
-    <header className="flex justify-between items-center fixed right-0 px-10 top-0 w-[100%] h-20">
+    <header className="flex justify-between items-center fixed top-0 w-[calc(100%-80px)] h-20 border-b-2 border-b-black-300 bg-white">
       <h1 className="text-[35px]">
-        <span className="text-[#A18A68]">S</span>HOPPE
+        <Link href={`/${locale}`}>
+          <span className="text-[#A18A68]">S</span>HOPPE
+        </Link>
       </h1>
       <nav className="flex items-center gap-8">
         <div className="flex gap-20 mx-10">
-          <Link href={"/shop"}>Shop</Link>
-          <Link href={"/blog"}>Blog</Link>
-          <Link href={"/about"}>Our Story</Link>
+          <Link
+            href={`/${locale}/shop`}
+            className={
+              path === "shop"
+                ? "underline underline-offset-[30px] decoration-2"
+                : ""
+            }
+          >
+            Shop
+          </Link>
+          <Link
+            href={`/${locale}/blog`}
+            className={
+              path === "blog"
+                ? "underline underline-offset-[30px] decoration-2"
+                : ""
+            }
+          >
+            Blog
+          </Link>
+          <Link
+            href={`/${locale}/about`}
+            className={
+              path === "about"
+                ? "underline underline-offset-[30px] decoration-2"
+                : ""
+            }
+          >
+            Our Story
+          </Link>
         </div>
         <div className="w-[1px] h-[20px] bg-black"></div>
         <Link href={"/search"}>

@@ -1,13 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import Input from "../_common/input";
 
-const Footer = () => {
+const Footer = ({ locale }) => {
   return (
-    <footer className="border-t-slate-300 border-t-2 py-10">
+    <footer className="border-t-slate-300 border-t-2 py-12">
       <div className="flex justify-between">
         <div className="flex justify-center gap-8">
-          <Link href={"/contact"}>
+          <Link href={`/${locale}/contact`}>
             <span className="text-slate-500">CONTACT</span>
           </Link>
           <Link href={"/contact"}>
@@ -18,8 +19,7 @@ const Footer = () => {
           </Link>
         </div>
         <div className="flex justify-center border-b-slate-700 border-b-2">
-          <input
-            className="pr-16 py-2 outline-none"
+          <Input
             type="email"
             placeholder="Give an email, get the newsletter."
           />
@@ -32,7 +32,13 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex justify-between mt-10">
-        <p>© 2021 Shelly. Terms of use and privacy policy.</p>
+        <p>
+          © 2021 Shelly. Terms of use and
+          <Link href={`/${locale}/privacy`} className="text-slate-500">
+            {" "}
+            privacy policy.
+          </Link>
+        </p>
         <div className="flex gap-8">
           <button>
             <Image
