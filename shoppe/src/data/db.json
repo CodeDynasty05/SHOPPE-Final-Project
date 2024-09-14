@@ -1,0 +1,447 @@
+{
+  "blogs": [
+    {
+      "id": "1",
+      "title": "Top Trends From Spring",
+      "category": "Fashion",
+      "date": "October 8, 2020",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. faucibus augue, a maximus elit ex vitae libero...",
+      "image": "/blog/blog2.jpg",
+      "comments": [
+        {
+          "name": "Nazim Ganizada",
+          "date": "31 Aug, 2024",
+          "comment": "Bu bir test commentidir.",
+          "replies": [
+            {
+              "name": "Nazim Ganizada",
+              "date": "31 Aug, 2024",
+              "comment": "Bu bir testdir."
+            }
+          ]
+        },
+        {
+          "name": "Nazim",
+          "date": "05 Sep, 2024",
+          "comment": "This is a test",
+          "website": "I dont have any",
+          "replies": []
+        },
+        {
+          "name": "saasas",
+          "date": "05 Sep, 2024",
+          "comment": "sasas",
+          "website": "",
+          "replies": []
+        },
+        {
+          "name": "Nazim",
+          "date": "06 Sep, 2024",
+          "comment": "Revalidate test",
+          "website": "",
+          "replies": []
+        },
+        {
+          "name": "Nazim Ganizada",
+          "date": "06 Sep, 2024",
+          "comment": "Revalidate test after action created",
+          "website": "",
+          "replies": []
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "title": "Top Trends From Spring",
+      "category": "Fashion",
+      "date": "October 8, 2020",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. faucibus augue, a maximus elit ex vitae libero...",
+      "image": "/blog/blog1.jpg",
+      "comments": [
+        {
+          "name": "Nazim",
+          "date": "06 Sep, 2024",
+          "comment": "Last comment test",
+          "website": "ffdd",
+          "replies": []
+        },
+        {
+          "name": "Nazim",
+          "date": "06 Sep, 2024",
+          "comment": "Last comment test",
+          "website": "ffdd",
+          "replies": []
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "title": "Top Trends From Spring",
+      "category": "Fashion",
+      "date": "October 8, 2020",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. faucibus augue, a maximus elit ex vitae libero...",
+      "image": "/blog/blog4.jpg",
+      "comments": [
+        {
+          "name": "Nazim",
+          "date": "06 Sep, 2024",
+          "comment": "sdsd",
+          "website": "dk",
+          "replies": []
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "title": "Top Trends From Spring",
+      "category": "Fashion",
+      "date": "October 8, 2020",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. faucibus augue, a maximus elit ex vitae libero...",
+      "image": "/blog/blog3.jpg",
+      "comments": []
+    },
+    {
+      "id": "2",
+      "title": "Fashion Trends",
+      "category": "Fashion",
+      "date": "April 18, 2020",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. faucibus augue, a maximus elit ex vitae libero...",
+      "image": "/blog/blog2.jpg",
+      "comments": []
+    },
+    {
+      "id": "3",
+      "title": "Trends In Summer",
+      "category": "Style",
+      "date": "June 10, 2020",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. faucibus augue, a maximus elit ex vitae libero...",
+      "image": "/blog/blog3.jpg",
+      "comments": []
+    },
+    {
+      "id": "4",
+      "title": "Trends In Summer 2021",
+      "category": "Style",
+      "date": "July 19, 2021",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. faucibus augue, a maximus elit ex vitae libero...",
+      "image": "/blog/blog4.jpg",
+      "comments": []
+    },
+    {
+      "id": "5",
+      "title": "Trends In Winter",
+      "category": "Accessories",
+      "date": "January 15, 2020",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. faucibus augue, a maximus elit ex vitae libero...",
+      "image": "/blog/blog1.jpg",
+      "comments": [
+        {
+          "name": "Nizami",
+          "date": "12 Sep, 2024",
+          "comment": "Salam DUnya",
+          "website": "sdsd",
+          "replies": []
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Trends In Winter 2021",
+      "category": "Accessories",
+      "date": "February 20, 2021",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. faucibus augue, a maximus elit ex vitae libero...",
+      "image": "/blog/blog2.jpg",
+      "comments": []
+    },
+    {
+      "id": "7",
+      "title": "Top Seassonal Trends",
+      "category": "Season",
+      "date": "November 10, 2020",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. faucibus augue, a maximus elit ex vitae libero...",
+      "image": "/blog/blog3.jpg",
+      "comments": []
+    },
+    {
+      "id": "8",
+      "title": "Top Seassonal Trends 2021",
+      "category": "Season",
+      "date": "July 19, 2021",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. faucibus augue, a maximus elit ex vitae libero...",
+      "image": "/blog/blog4.jpg",
+      "comments": []
+    },
+    {
+      "id": "71",
+      "title": "Top Seassonal Trends",
+      "category": "Season",
+      "date": "November 10, 2020",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. faucibus augue, a maximus elit ex vitae libero...",
+      "image": "/blog/blog1.jpg",
+      "comments": [
+        {
+          "name": "Rafi",
+          "date": "12 Sep, 2024",
+          "comment": "Rafiden Salam",
+          "website": "",
+          "replies": []
+        }
+      ]
+    },
+    {
+      "id": "72",
+      "title": "Top Seassonal Trends",
+      "category": "Season",
+      "date": "November 10, 2020",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. faucibus augue, a maximus elit ex vitae libero...",
+      "image": "/blog/blog2.jpg",
+      "comments": []
+    },
+    {
+      "id": "73",
+      "title": "Top Seassonal Trends",
+      "category": "Season",
+      "date": "November 10, 2020",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. faucibus augue, a maximus elit ex vitae libero...",
+      "image": "/blog/blog3.jpg",
+      "comments": []
+    },
+    {
+      "id": "74",
+      "title": "Top Seassonal Trends",
+      "category": "Season",
+      "date": "November 10, 2020",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. faucibus augue, a maximus elit ex vitae libero...",
+      "image": "/blog/blog3.jpg",
+      "comments": []
+    },
+    {
+      "id": "75",
+      "title": "Top Seassonal Trends",
+      "category": "Season",
+      "date": "November 10, 2020",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. faucibus augue, a maximus elit ex vitae libero...",
+      "image": "/blog/blog1.jpg",
+      "comments": []
+    },
+    {
+      "id": "76",
+      "title": "Top Seassonal Trends",
+      "category": "Season",
+      "date": "November 10, 2020",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. faucibus augue, a maximus elit ex vitae libero...",
+      "image": "/blog/blog4.jpg",
+      "comments": []
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "productName": "Lira Earrings",
+      "price": 20.5,
+      "stock": 10,
+      "discount": 0,
+      "rating": 4,
+      "category": "Fashion",
+      "desc": "Elegant circular earrings with a minimalist design. Lightweight and suitable for any occasion.",
+      "info": {
+        "weight": 0.3,
+        "dimension": "15x10x1",
+        "colours": [
+          "gold",
+          "silver"
+        ],
+        "material": "metal"
+      },
+      "image": "/products/product1.jpg",
+      "reviews": []
+    },
+    {
+      "id": "2",
+      "productName": "Hal Earrings",
+      "price": 25,
+      "stock": 15,
+      "discount": 5,
+      "rating": 5,
+      "category": "Fashion",
+      "desc": "Stylish oval-shaped earrings with a glossy finish. Perfect for both casual and formal wear.",
+      "info": {
+        "weight": 0.25,
+        "dimension": "14x9x1",
+        "colours": [
+          "gold",
+          "rose gold"
+        ],
+        "material": "metal"
+      },
+      "image": "/products/product2.jpg",
+      "reviews": []
+    },
+    {
+      "id": "3",
+      "productName": "Kaede Hair Pin Set Of 3",
+      "price": 30,
+      "stock": 8,
+      "discount": 10,
+      "rating": 4.5,
+      "category": "Accessories",
+      "desc": "A set of three unique hair pins, including pearl accents and geometric designs. Adds a chic touch to any hairstyle.",
+      "info": {
+        "weight": 0.1,
+        "dimension": "5x2x1",
+        "colours": [
+          "gold",
+          "pearl"
+        ],
+        "material": "metal, pearl"
+      },
+      "image": "/products/product3.jpg",
+      "reviews": []
+    },
+    {
+      "id": "4",
+      "productName": "Hair Pin Set of 3",
+      "price": 30,
+      "stock": 12,
+      "discount": 0,
+      "rating": 4.8,
+      "category": "Accessories",
+      "desc": "This elegant set of three hairpins features pearl and geometric accents, perfect for a sophisticated look.",
+      "info": {
+        "weight": 0.1,
+        "dimension": "5x2x1",
+        "colours": [
+          "gold",
+          "white"
+        ],
+        "material": "metal, pearl"
+      },
+      "image": "/products/product4.jpg",
+      "reviews": []
+    },
+    {
+      "id": "5",
+      "productName": "Plaine Necklace",
+      "price": 19,
+      "stock": 20,
+      "discount": 0,
+      "rating": 4.7,
+      "category": "Style",
+      "desc": "A minimalistic gold necklace with a square pendant featuring a chic engraved design. Suitable for daily wear.",
+      "info": {
+        "weight": 0.05,
+        "dimension": "20x1x1",
+        "colours": [
+          "gold"
+        ],
+        "material": "metal"
+      },
+      "image": "/products/product5.jpg",
+      "reviews": []
+    },
+    {
+      "id": "6",
+      "productName": "Yuki Hair Pin Set of 3",
+      "price": 29,
+      "stock": 5,
+      "discount": 0,
+      "rating": 4.6,
+      "category": "Accessories",
+      "desc": "A chic set of hairpins with pearl and metallic accents, perfect for styling casual or formal looks.",
+      "info": {
+        "weight": 0.1,
+        "dimension": "4x2x1",
+        "colours": [
+          "gold",
+          "pearl"
+        ],
+        "material": "metal, pearl"
+      },
+      "image": "/products/product6.jpg",
+      "reviews": []
+    },
+    {
+      "id": "7",
+      "productName": "Minimalist Stud Earrings",
+      "price": 18,
+      "stock": 25,
+      "discount": 0,
+      "rating": 4.3,
+      "category": "Fashion",
+      "desc": "Simple and elegant stud earrings that pair well with any outfit. Designed for comfort and style.",
+      "info": {
+        "weight": 0.05,
+        "dimension": "10x10x1",
+        "colours": [
+          "silver",
+          "gold"
+        ],
+        "material": "metal"
+      },
+      "image": "/products/product1.jpg",
+      "reviews": []
+    },
+    {
+      "id": "8",
+      "productName": "Boho Feather Earrings",
+      "price": 22,
+      "stock": 7,
+      "discount": 5,
+      "rating": 4.9,
+      "category": "Style",
+      "desc": "Bohemian-style feather earrings that add a whimsical touch to your look. Great for festivals and casual outings.",
+      "info": {
+        "weight": 0.15,
+        "dimension": "12x7x1",
+        "colours": [
+          "brown",
+          "beige"
+        ],
+        "material": "feather, metal"
+      },
+      "image": "/products/product4.jpg",
+      "reviews": []
+    },
+    {
+      "id": "9",
+      "productName": "Summer Beaded Bracelet",
+      "price": 15,
+      "stock": 30,
+      "discount": 0,
+      "rating": 4.5,
+      "category": "Season",
+      "desc": "A colorful beaded bracelet with a summer theme, perfect for adding a pop of color to your outfit.",
+      "info": {
+        "weight": 0.1,
+        "dimension": "8x2x1",
+        "colours": [
+          "multicolor"
+        ],
+        "material": "beads"
+      },
+      "image": "/products/product6.jpg",
+      "reviews": []
+    },
+    {
+      "id": "10",
+      "productName": "Geometric Drop Earrings",
+      "price": 27,
+      "stock": 9,
+      "discount": 10,
+      "rating": 4.7,
+      "category": "Fashion",
+      "desc": "Trendy geometric drop earrings that bring a modern flair to your outfit. Perfect for evening wear.",
+      "info": {
+        "weight": 0.2,
+        "dimension": "15x5x1",
+        "colours": [
+          "gold",
+          "silver"
+        ],
+        "material": "metal"
+      },
+      "image": "/products/product5.jpg",
+      "reviews": []
+    }
+  ]
+}

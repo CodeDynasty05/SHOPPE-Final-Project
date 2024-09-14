@@ -8,7 +8,7 @@ const Header = ({ locale }: { locale: string }) => {
   const pathname = usePathname();
   const path = pathname.split("/")[2];
   return (
-    <header className="flex justify-between items-center fixed top-0 w-[calc(100%-80px)] h-20 border-b-2 border-b-black-300 bg-white">
+    <header className="flex justify-between items-center fixed z-40 top-0 w-[91%] h-20 border-b-2 border-b-black-300 bg-white">
       <h1 className="text-[35px]">
         <Link href={`/${locale}`}>
           <span className="text-[#A18A68]">S</span>HOPPE

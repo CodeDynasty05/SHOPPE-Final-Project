@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import Input from "../_common/input";
+import Input from "@/components/_common/input";
 
 const Footer = ({ locale }) => {
   return (
@@ -18,10 +18,11 @@ const Footer = ({ locale }) => {
             <span className="text-slate-500">SHIPPING AND RETURNS</span>
           </Link>
         </div>
-        <div className="flex justify-center border-b-slate-700 border-b-2">
+        <div className="flex justify-center border-b-slate-700 border-b-2 gap-8">
           <Input
             type="email"
             placeholder="Give an email, get the newsletter."
+            pr={12}
           />
           <button
             className="text-3xl w-10 active:bg-gray-400 hover:bg-gray-300 h-10"

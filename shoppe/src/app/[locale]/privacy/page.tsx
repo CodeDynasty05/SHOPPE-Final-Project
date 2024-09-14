@@ -4,7 +4,9 @@ const PrivacyPage = () => {
   return (
     <div className="flex flex-col gap-10 w-[40%] mx-auto">
       <div className="flex gap-4 flex-col">
-        <h3 className="text-3xl text-center font-semibold">Privacy Policy</h3>
+        <h3 className="text-3xl text-center font-semibold mb-6">
+          Privacy Policy
+        </h3>
         <p>
           Duis rutrum dictum libero quis rutrum. Etiam sed neque aliquam,
           sollicitudin ante a, gravida arcu. Nam fringilla molestie velit, eget
