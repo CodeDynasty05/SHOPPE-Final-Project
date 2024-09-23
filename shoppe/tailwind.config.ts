@@ -18,6 +18,19 @@ const config: Config = {
       colors: {
         main: "#a16207",
       },
+      keyframes: {
+        rightToLeft: {
+          "0%": {
+            width: "0",
+          },
+          "100%": {
+            width: "500px",
+          },
+        },
+      },
+      animation: {
+        rightToLeft: "rightToLeft 0.5s ease-in-out",
+      },
     },
   },
   plugins: [nextui()],

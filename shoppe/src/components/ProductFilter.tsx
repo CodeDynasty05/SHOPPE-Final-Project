@@ -5,15 +5,17 @@ import Button from "./_common/Button";
 import { Select, SelectItem, Slider, Switch } from "@nextui-org/react";
 import { SortBy, _CATEGORIES } from "@/utils/constants";
 import { FilterContext } from "@/context/FilterContext";
+import { useSearchParams } from "next/navigation";
 
 const ProductFilter = () => {
+  const searchParams = useSearchParams();
   const [categoryValue, setCategoryValue] = useState("All");
   const [sort, setSort] = useState("Popularity");
   const [range, setRange] = useState<number[] | number>([0, 100]);
   const [filter, setFilter] = useContext(FilterContext);
   const [onSale, setOnSale] = useState(false);
   const [inStock, setInStock] = useState(false);
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState(searchParams.get("search") || "");
   useEffect(() => {
     setFilter({
       ...filter,

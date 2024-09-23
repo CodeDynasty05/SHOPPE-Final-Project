@@ -17,4 +17,5 @@ export default interface IProduct {
   };
   image: string;
   reviews: IComment[];
+  count?: number;
 }

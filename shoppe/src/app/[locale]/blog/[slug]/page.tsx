@@ -1,17 +1,34 @@
+import CommentWithoutStar from "@/components/CommentWIthoutStar";
 import PostComment from "@/components/PostComment";
 import Comment from "@/components/comment";
 import IComment from "@/interfaces/_common/IComment";
 import axios from "axios";
+import { Metadata } from "next";
 import Image from "next/image";
+
+async function fetchProducts(id: string) {
+  const { data } = await axios("http://localhost:5000/blogs/" + id);
+  return data;
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Promise<Metadata> {
+  const data = await fetchProducts(params.slug);
+
+  return {
+    title: `${data.title} | Shoppe`,
+  };
+}
 
 export default async function SingleBlogPage({
   params,
-  searchParams,
 }: {
   params: { slug: string };
-  searchParams: { [key: string]: string | string[] | undefined };
 }) {
-  const { data } = await axios("http://localhost:5000/blogs/" + params.slug);
+  const data = await fetchProducts(params.slug);
   const { image, title, category, comments, date, desc } = data;
   return (
     <div className="flex flex-col gap-12 py-10">
@@ -100,7 +117,9 @@ export default async function SingleBlogPage({
             Comments ({comments.length})
           </h3>
           {comments.length
-            ? comments.map((comment: IComment) => <Comment {...comment} />)
+            ? comments.map((comment: IComment) => (
+                <CommentWithoutStar {...comment} />
+              ))
             : null}
         </div>
       </div>

@@ -4,17 +4,12 @@ import IComment from "@/interfaces/_common/IComment";
 import { getDate } from "@/utils/helpers";
 import { Checkbox, Input, Textarea } from "@nextui-org/react";
 import axios from "axios";
+import ReactStars from "react-stars";
 import React, { useState } from "react";
 
-const PostComment = ({
-  id,
-  comments,
-}: {
-  id: string;
-  comments: IComment[];
-}) => {
+const PostReview = ({ id, reviews }: { id: string; reviews: IComment[] }) => {
   const handlePost: any = () => {
-    if (!userNameValue || !textValue) {
+    if (!userNameValue || !textValue || !star) {
       alert("Please fill in the required fields");
       return;
     }
@@ -23,24 +18,22 @@ const PostComment = ({
       name: userNameValue,
       date: getDate(),
       comment: textValue,
-      star: 0,
-      website: websiteValue,
       replies: [],
+      star,
     };
-    axios.patch(`http://localhost:5000/blogs/${id}`, {
-      comments: [...comments, data],
+    axios.patch(`http://localhost:5000/products/${id}`, {
+      reviews: [...reviews, data],
     });
     action();
     setUserNameValue("");
     setEmailValue("");
-    setWebsiteValue("");
     setTextValue("");
   };
 
   const [userNameValue, setUserNameValue] = useState("");
   const [emailValue, setEmailValue] = useState("");
-  const [websiteValue, setWebsiteValue] = useState("");
   const [textValue, setTextValue] = useState("");
+  const [star, setStar] = useState(0);
 
   return (
     <div className="flex flex-col gap-8">
@@ -49,6 +42,15 @@ const PostComment = ({
         Your email address will not be published. Required fields are marked *
       </p>
       <div className="flex flex-col gap-16">
+        <Textarea
+          variant={"underlined"}
+          labelPlacement="outside"
+          placeholder="Your comment*"
+          value={textValue}
+          onChange={(e) => setTextValue(e.target.value)}
+          className="col-span-12 md:col-span-6 mb-6 md:mb-0"
+          isRequired={true}
+        />
         <div className="border-b-3">
           <Input
             type="text"
@@ -68,28 +70,20 @@ const PostComment = ({
             label="Enter your Email"
           />
         </div>
-        <div className="border-b-3">
-          <Input
-            type="text"
-            variant="underlined"
-            onChange={(e) => setWebsiteValue(e.target.value)}
-            value={websiteValue}
-            label="Enter your Website"
-          />
-        </div>
         <Checkbox radius="none">
           Save my name, email, and website in this browser for the next time I
           comment
         </Checkbox>
-        <Textarea
-          variant={"underlined"}
-          labelPlacement="outside"
-          placeholder="Your comment*"
-          value={textValue}
-          onChange={(e) => setTextValue(e.target.value)}
-          className="col-span-12 md:col-span-6 mb-6 md:mb-0"
-          isRequired={true}
-        />
+        <div>
+          <p className="text-lg text-gray-500">Your Rating*</p>
+          <ReactStars
+            count={5}
+            value={star}
+            onChange={(value) => setStar(value)}
+            size={24}
+            color2={"#ffd700"}
+          />
+        </div>
         <button
           className="text-white bg-black p-4 w-[30%] text-lg"
           onClick={handlePost}
@@ -101,4 +95,4 @@ const PostComment = ({
   );
 };
 
-export default PostComment;
+export default PostReview;

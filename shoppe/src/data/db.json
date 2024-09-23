@@ -151,7 +151,15 @@
       "date": "February 20, 2021",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. faucibus augue, a maximus elit ex vitae libero...",
       "image": "/blog/blog2.jpg",
-      "comments": []
+      "comments": [
+        {
+          "name": "[popl.jhg",
+          "date": "14 Sep, 2024",
+          "comment": "'l;kljhgf",
+          "website": "lkjhg",
+          "replies": []
+        }
+      ]
     },
     {
       "id": "7",
@@ -241,7 +249,7 @@
       "price": 20.5,
       "stock": 10,
       "discount": 0,
-      "rating": 4,
+      "rating": 3.5,
       "category": "Fashion",
       "desc": "Elegant circular earrings with a minimalist design. Lightweight and suitable for any occasion.",
       "info": {
@@ -254,7 +262,15 @@
         "material": "metal"
       },
       "image": "/products/product1.jpg",
-      "reviews": []
+      "reviews": [
+        {
+          "name": "sa",
+          "date": "19 Sep, 2024",
+          "comment": "sa",
+          "replies": [],
+          "star": 3.5
+        }
+      ]
     },
     {
       "id": "2",
@@ -262,7 +278,7 @@
       "price": 25,
       "stock": 15,
       "discount": 5,
-      "rating": 5,
+      "rating": 2.5,
       "category": "Fashion",
       "desc": "Stylish oval-shaped earrings with a glossy finish. Perfect for both casual and formal wear.",
       "info": {
@@ -283,7 +299,7 @@
       "price": 30,
       "stock": 8,
       "discount": 10,
-      "rating": 4.5,
+      "rating": 3.5,
       "category": "Accessories",
       "desc": "A set of three unique hair pins, including pearl accents and geometric designs. Adds a chic touch to any hairstyle.",
       "info": {
@@ -304,7 +320,7 @@
       "price": 30,
       "stock": 12,
       "discount": 0,
-      "rating": 4.8,
+      "rating": 4.5,
       "category": "Accessories",
       "desc": "This elegant set of three hairpins features pearl and geometric accents, perfect for a sophisticated look.",
       "info": {
@@ -325,7 +341,7 @@
       "price": 19,
       "stock": 20,
       "discount": 0,
-      "rating": 4.7,
+      "rating": 4,
       "category": "Style",
       "desc": "A minimalistic gold necklace with a square pendant featuring a chic engraved design. Suitable for daily wear.",
       "info": {
@@ -345,7 +361,7 @@
       "price": 29,
       "stock": 5,
       "discount": 0,
-      "rating": 4.6,
+      "rating": 2.5,
       "category": "Accessories",
       "desc": "A chic set of hairpins with pearl and metallic accents, perfect for styling casual or formal looks.",
       "info": {
@@ -400,7 +416,15 @@
         "material": "feather, metal"
       },
       "image": "/products/product4.jpg",
-      "reviews": []
+      "reviews": [
+        {
+          "name": "Nazim",
+          "date": "23 Sep, 2024",
+          "comment": "Salam",
+          "replies": [],
+          "star": 1.5
+        }
+      ]
     },
     {
       "id": "9",

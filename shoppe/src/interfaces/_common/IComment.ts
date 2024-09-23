@@ -4,4 +4,5 @@ export default interface IComment {
   comment: string;
   website?: string;
   replies: IComment[];
+  star?: number;
 }

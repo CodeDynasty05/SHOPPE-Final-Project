@@ -1,8 +1,11 @@
 "use client";
+import { Button } from "@nextui-org/react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
+import Search from "../Search";
+import Cart from "../Cart";
 
 const Header = ({ locale }: { locale: string }) => {
   const pathname = usePathname();
@@ -48,17 +51,17 @@ const Header = ({ locale }: { locale: string }) => {
           </Link>
         </div>
         <div className="w-[1px] h-[20px] bg-black"></div>
-        <Link href={"/search"}>
+        <Search>
           <Image
             src={"/icons/search.png"}
             width={20}
             height={20}
             alt="search"
           />
-        </Link>
-        <Link href={"/cart"}>
+        </Search>
+        <Cart>
           <Image src={"/icons/cart.png"} width={20} height={20} alt="cart" />
-        </Link>
+        </Cart>
         <Link href={"/account"}>
           <Image
             src={"/icons/account.png"}

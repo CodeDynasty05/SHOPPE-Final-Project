@@ -1,9 +1,8 @@
 import IComment from "@/interfaces/_common/IComment";
 import Image from "next/image";
 import React from "react";
-import ReactStars from "react-stars";
 
-const Comment = ({ name, comment, date, replies, star = 0 }: IComment) => {
+const CommentWithoutStar = ({ name, comment, date, replies }: IComment) => {
   return (
     <div className="border-b-3 pb-6">
       <div className="flex gap-4">
@@ -12,9 +11,7 @@ const Comment = ({ name, comment, date, replies, star = 0 }: IComment) => {
           <h4 className="font-medium">
             {name} &nbsp; <span className="text-gray-500">{date}</span>
           </h4>
-          {typeof star === "number" && star > 0 && (
-            <ReactStars value={2} edit={false} size={24} />
-          )}
+
           <p className="text-gray-500">{comment}</p>
         </div>
       </div>
@@ -37,4 +34,4 @@ const Comment = ({ name, comment, date, replies, star = 0 }: IComment) => {
   );
 };
 
-export default Comment;
+export default CommentWithoutStar;

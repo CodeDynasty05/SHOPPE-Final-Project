@@ -1,6 +1,10 @@
+import { Metadata } from "next";
 import Image from "next/image";
 import React from "react";
 
+export const metadata: Metadata = {
+  title: "About | Shoppe",
+};
 const AboutPage = () => {
   return (
     <div className="flex flex-col gap-10 w-[40%] mx-auto mt-18 mb-28">
