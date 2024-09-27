@@ -291,7 +291,15 @@
         "material": "metal"
       },
       "image": "/products/product2.jpg",
-      "reviews": []
+      "reviews": [
+        {
+          "name": "qwedrfgthyj",
+          "date": "25 Sep, 2024",
+          "comment": "wsedrftgyhjk",
+          "replies": [],
+          "star": 5
+        }
+      ]
     },
     {
       "id": "3",
@@ -395,7 +403,15 @@
         "material": "metal"
       },
       "image": "/products/product1.jpg",
-      "reviews": []
+      "reviews": [
+        {
+          "name": "pakize",
+          "date": "27 Sep, 2024",
+          "comment": "chox superdi, nenemede alacam",
+          "replies": [],
+          "star": 4.5
+        }
+      ]
     },
     {
       "id": "8",

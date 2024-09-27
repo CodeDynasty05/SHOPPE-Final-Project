@@ -1,5 +1,10 @@
 {
   "HomePage": {
     "title": "Home Page"
+  },
+  "Header": {
+    "shop": "Shop",
+    "blog": "Blog",
+    "about": "Our Story"
   }
 }

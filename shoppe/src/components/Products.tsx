@@ -12,7 +12,7 @@ const Products = () => {
   return (
     <div className="pb-20">
       {data.length ? (
-        <div className="grid grid-cols-3 gap-16">
+        <div className="grid sm:grid-cols-3 grid-cols-1 gap-16">
           {data.slice((page - 1) * 3, page * 3).map((product) => (
             <Product key={product.id} {...product} />
           ))}

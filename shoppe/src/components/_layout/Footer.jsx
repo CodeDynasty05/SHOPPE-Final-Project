@@ -6,8 +6,8 @@ import Input from "@/components/_common/input";
 const Footer = ({ locale }) => {
   return (
     <footer className="border-t-slate-300 border-t-2 py-12">
-      <div className="flex justify-between">
-        <div className="flex justify-center gap-8">
+      <div className="flex sm:flex-row flex-col justify-between gap-6">
+        <div className="flex gap-8">
           <Link href={`/${locale}/contact`}>
             <span className="text-slate-500">CONTACT</span>
           </Link>
@@ -18,7 +18,7 @@ const Footer = ({ locale }) => {
             <span className="text-slate-500">SHIPPING AND RETURNS</span>
           </Link>
         </div>
-        <div className="flex justify-center border-b-slate-700 border-b-2 gap-8">
+        <div className="flex justify-center border-b-slate-700 border-b-2 gap-8 w-1/2 sm:w-auto pl-2 sm:pl-0">
           <Input
             type="email"
             placeholder="Give an email, get the newsletter."

@@ -6,6 +6,8 @@ export const BasketSlice = createSlice({
   initialState: {
     basket: [],
     totalPrice: 0,
+    discount: 0,
+    orders: [],
   },
   reducers: {
     addToBasket: (state, action) => {
@@ -14,14 +16,15 @@ export const BasketSlice = createSlice({
     },
 
     multipleBuy: (state, action) => {
-      state.basket.find(({ name }) => name === action.payload.name).count =
-        action.payload.count;
+      state.basket.find(
+        ({ productName }) => productName === action.payload.name
+      ).count = action.payload.count;
 
       state.totalPrice = totalPriceCalculator(state.basket);
     },
     deleteProduct: (state, action) => {
       state.basket = state.basket.filter(
-        ({ name }) => name !== action.payload.name
+        ({ productName }) => productName !== action.payload.name
       );
       state.totalPrice = totalPriceCalculator(state.basket);
     },
@@ -29,10 +32,23 @@ export const BasketSlice = createSlice({
       state.basket = [];
       state.totalPrice = 0;
     },
+    setDiscount: (state, action) => {
+      state.discount = action.payload;
+    },
+
+    setOrders: (state, action) => {
+      state.orders.push(action.payload);
+    },
   },
 });
 
-export const { addToBasket, buy, deleteProduct, multipleBuy } =
-  BasketSlice.actions;
+export const {
+  addToBasket,
+  buy,
+  deleteProduct,
+  multipleBuy,
+  setDiscount,
+  setOrders,
+} = BasketSlice.actions;
 
 export default BasketSlice.reducer;

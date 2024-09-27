@@ -16,7 +16,7 @@ const Carousel = ({ data }: { data: IProduct[] }) => {
     return () => clearInterval(intervalId);
   }, [data.length]);
   return (
-    <div className="h-[80vh] bg-[url(/carousel.jpg)] bg-cover rounded-2xl flex flex-col justify-center relative">
+    <div className="h-[80vh] bg-[url(/carousel.jpg)] bg-cover bg-center rounded-2xl flex flex-col justify-center relative">
       <div className="ml-16 flex flex-col gap-5">
         <h3 className="text-3xl font-medium text-white">
           {data[index].productName}

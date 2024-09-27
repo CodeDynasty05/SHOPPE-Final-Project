@@ -1,5 +1,10 @@
 {
   "HomePage": {
     "title": "Ana Sehife"
+  },
+  "Header": {
+    "shop": "Magaza",
+    "blog": "Blog",
+    "about": "Bizim Hekayəmiz"
   }
 }

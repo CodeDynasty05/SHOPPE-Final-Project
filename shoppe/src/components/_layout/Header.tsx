@@ -11,14 +11,14 @@ const Header = ({ locale }: { locale: string }) => {
   const pathname = usePathname();
   const path = pathname.split("/")[2];
   return (
-    <header className="flex justify-between items-center fixed z-40 top-0 w-[91%] h-20 border-b-2 border-b-black-300 bg-white">
-      <h1 className="text-[35px]">
+    <header className="flex justify-between items-center fixed z-40 top-0 sm:w-[92%] w-[97%] h-20 border-b-2 border-b-black-300 bg-white">
+      <h1 className="xl:text-[35px] text-[25px] font-medium">
         <Link href={`/${locale}`}>
           <span className="text-[#A18A68]">S</span>HOPPE
         </Link>
       </h1>
-      <nav className="flex items-center gap-8">
-        <div className="flex gap-20 mx-10">
+      <nav className="flex items-center xl:gap-8 gap-2">
+        <div className="flex xl:gap-20 mx-10 gap-4 items-center">
           <Link
             href={`/${locale}/shop`}
             className={
@@ -62,7 +62,7 @@ const Header = ({ locale }: { locale: string }) => {
         <Cart>
           <Image src={"/icons/cart.png"} width={20} height={20} alt="cart" />
         </Cart>
-        <Link href={"/account"}>
+        <Link href={"/en/account"}>
           <Image
             src={"/icons/account.png"}
             width={20}

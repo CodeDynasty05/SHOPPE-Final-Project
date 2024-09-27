@@ -12,8 +12,7 @@ export function capitalizeFirstLetter(string: string) {
 export const totalPriceCalculator = (basket: IProduct[]) => {
   let totalPrice = 0;
   basket.forEach((item) => {
-    totalPrice +=
-      (item.price - (item.price * item.discount) / 100) * (item.count || 0);
+    totalPrice += item.price * (item.count || 0);
   });
 
   return totalPrice;

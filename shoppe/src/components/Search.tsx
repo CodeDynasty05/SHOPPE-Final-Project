@@ -27,7 +27,7 @@ const Search = ({ children }: { children: React.ReactNode }) => {
     if (event.key === "Enter") {
       setSearch("");
       setShow(false);
-      router.push(`en/shop?search=${encodeURIComponent(search)}`);
+      router.replace(`/en/shop?search=${encodeURIComponent(search)}`);
     }
   };
   return (

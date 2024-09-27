@@ -30,8 +30,8 @@ const Cart = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <>
-      <div className="relative">
-        <button onClick={() => setShow(!show)}>{children}</button>
+      <div className="relative" onClick={() => setShow(!show)}>
+        <button>{children}</button>
         {basket.length ? (
           <div className="flex justify-center items-center absolute top-[-5px] right-[-5px] w-4 h-4 text-sm text-white bg-red-500 rounded-full">
             {basket.length}

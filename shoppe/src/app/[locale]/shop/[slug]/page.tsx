@@ -20,7 +20,7 @@ export async function generateMetadata({
 }: {
   params: { slug: string };
 }): Promise<Metadata> {
-  const products = await fetchProducts(); // Fetch products
+  const products = await fetchProducts();
   const product = products.find((p) => p.id == +params.slug);
 
   return {
@@ -34,10 +34,11 @@ export default async function SingleProductPage({
 }) {
   const products = await fetchProducts();
   const data = products.find((p) => p.id == +params.slug);
-  const recommended = products.filter((p) => p.id !== +params.slug).slice(0, 3);
+  const recommended = products.filter((p) => p.id != +params.slug).slice(0, 3);
+
   return (
     <div>
-      <div className="flex">
+      <div className="flex xl:flex-row flex-col gap-8 items-center">
         <div className="flex gap-8">
           <div className="flex flex-col gap-8 mt-1">
             {data &&
