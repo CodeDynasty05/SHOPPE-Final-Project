@@ -1,10 +1,12 @@
 "use client";
 import IProduct from "@/interfaces/_common/IProduct";
 import { Button } from "@nextui-org/react";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 const Carousel = ({ data }: { data: IProduct[] }) => {
+  const t = useTranslations("Carousel");
   const [index, setIndex] = useState(0);
   const handleClick = (i: number) => {
     setIndex(i);
@@ -27,7 +29,7 @@ const Carousel = ({ data }: { data: IProduct[] }) => {
             href={`/en/shop/${data[index].id}`}
             className="block text-white text-2xl py-4 px-6"
           >
-            View Product
+            {t("button")}
           </Link>
         </div>
       </div>

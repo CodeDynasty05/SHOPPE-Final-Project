@@ -1,7 +1,7 @@
 export default interface IInput {
   type: string;
   placeholder: string;
-  pr: number;
+  w: number;
   value?: string;
   onChange?: (e: any) => void;
 }

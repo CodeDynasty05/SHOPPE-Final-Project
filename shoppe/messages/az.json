@@ -1,0 +1,22 @@
+{
+  "HomePage": {
+    "latest": "Ən son məhsullar",
+    "view": "Hamısına Bax"
+  },
+  "Header": {
+    "shop": "Mağaza",
+    "blog": "Blog",
+    "about": "Bizim Hekayəmiz"
+  },
+  "Footer": {
+    "contact": "ƏLAQƏ",
+    "service": "XİDMƏT ŞƏRTLƏRİ",
+    "shipping": "ÇATDIRILMA VƏ GERİ QAYTARMA",
+    "use": "İstifadə Şərtləri və",
+    "policy": "Məxfilik Siyasəti",
+    "email": "E-poçtunuzu daxil edin, xəbərləri əldə edin."
+  },
+  "Carousel": {
+    "button": "Məhsula Bax"
+  }
+}

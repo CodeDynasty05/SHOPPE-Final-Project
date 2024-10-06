@@ -1,0 +1,22 @@
+{
+  "HomePage": {
+    "latest": "Shop The Latest",
+    "view": "View All"
+  },
+  "Header": {
+    "shop": "Shop",
+    "blog": "Blog",
+    "about": "Our Story"
+  },
+  "Footer": {
+    "contact": "CONTACT",
+    "service": "TERMS OF SERVICE",
+    "shipping": "SHIPPING AND RETURNS",
+    "use": "Terms of Use and",
+    "policy": "Privacy Policy",
+    "email": "Give an email, get the newsletter."
+  },
+  "Carousel": {
+    "button": "View Product"
+  }
+}
